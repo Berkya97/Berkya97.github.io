@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Berkay Yavuz | Yazılım Mühendisi</title>
+    <meta name="description" content="Yapay zekâ, görüntü işleme ve web teknolojileriyle projeler geliştiren yazılım mühendisi. Freelance hizmetler, projeler ve blog içerikleri.">
+    <meta name="keywords" content="yazılım mühendisi, yapay zeka, görüntü işleme, python, freelancer, web geliştirme, AI, machine learning, opencv, fastapi">
+    <meta name="author" content="Berkay Yavuz">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Berkay Yavuz | Yazılım Mühendisi">
+    <meta property="og:description" content="Yapay zekâ, görüntü işleme ve web teknolojileriyle projeler geliştiren yazılım mühendisi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://berkayyavuz.github.io">
+    <meta property="og:image" content="https://berkayyavuz.github.io/assets/images/og-image.jpg">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <a href="#home">Berkay Yavuz</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#projects" class="nav-link">Projeler</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#products" class="nav-link">Ürünler</a></li>
+                <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Karanlık mod">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <!-- Hero Avatar - Placeholder for future image -->
+                <!-- <img src="assets/images/avatar.jpg" alt="Berkay Yavuz" class="hero-avatar" loading="lazy"> -->
+                <div class="hero-avatar"></div>
+                <h1 class="hero-title" data-text="Merhaba, ben Berkay.">Merhaba, ben Berkay.</h1>
+                <p class="hero-subtitle">Yazılım Mühendisi • Yapay Zekâ ve Görüntü İşleme</p>
+                <p class="hero-description">
+                    Yapay zekâ, görüntü işleme ve web teknolojileriyle projeler geliştiren bir yazılım mühendisiyim. 
+                    Sıfırdan ürün geliştirmeyi, araştırmayı ve gerçek hayata dokunan çözümler üretmeyi seviyorum.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
+                    <a href="#services" class="btn btn-secondary">Benimle Çalış</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projeler</h2>
+            <p class="section-description">
+                Geliştirdiğim bazı projeler ve açık kaynak katkılarım.
+            </p>
+            <div class="projects-grid">
+                <!-- Proje kartı 1 -->
+                <article class="project-card tilt-card">
+                    <span class="card-icon">👁️</span>
+                    <h3 class="project-title">Canlı Yüz Tanıma ve Duygu Analizi</h3>
+                    <p class="project-description">
+                        Gerçek zamanlı video akışından yüz tespiti yaparak duygu analizi gerçekleştiren bir sistem. 
+                        Web kamerası veya video dosyasından çalışabilir ve kullanıcı dostu bir arayüze sahiptir.
+                    </p>
+                    <p class="project-tech">Python, OpenCV, FastAPI, TensorFlow</p>
+                    <a href="#" class="btn btn-outline">Detay</a>
+                </article>
+
+                <!-- Proje kartı 2 -->
+                <article class="project-card tilt-card">
+                    <span class="card-icon">📊</span>
+                    <h3 class="project-title">YouTube Konuşma Süresi Analiz Aracı</h3>
+                    <p class="project-description">
+                        YouTube videolarındaki konuşma ve sessizlik sürelerini analiz eden bir araç. 
+                        İçerik üreticileri için video düzenleme süreçlerini optimize etmeye yardımcı olur.
+                    </p>
+                    <p class="project-tech">Python, YouTube API, Speech Recognition</p>
+                    <a href="#" class="btn btn-outline">Detay</a>
+                </article>
+
+                <!-- Proje kartı 3 -->
+                <article class="project-card tilt-card">
+                    <span class="card-icon">🔒</span>
+                    <h3 class="project-title">Akıllı Güvenlik Kamerası</h3>
+                    <p class="project-description">
+                        Hareket tespiti ve yüz tanıma özellikli güvenlik kamerası sistemi. 
+                        Anlık bildirimler ve kayıt özellikleriyle ev ve ofis güvenliği için ideal bir çözüm.
+                    </p>
+                    <p class="project-tech">Python, OpenCV, Flask, SQLite</p>
+                    <a href="#" class="btn btn-outline">Detay</a>
+                </article>
+
+                <!-- Proje kartı 4 -->
+                <article class="project-card tilt-card">
+                    <span class="card-icon">📝</span>
+                    <h3 class="project-title">Metin İşleme ve Analiz API'si</h3>
+                    <p class="project-description">
+                        Türkçe metin işleme, duygu analizi ve özetleme özellikleri sunan RESTful API. 
+                        Küçük ve orta ölçekli projeler için hızlı entegrasyon sağlar.
+                    </p>
+                    <p class="project-tech">Python, FastAPI, NLTK, Transformers</p>
+                    <a href="#" class="btn btn-outline">Detay</a>
+                </article>
+
+                <!-- Proje kartı 5 -->
+                <article class="project-card tilt-card">
+                    <span class="card-icon">🖼️</span>
+                    <h3 class="project-title">Görüntü Ön İşleme ve Optimizasyon Aracı</h3>
+                    <p class="project-description">
+                        Toplu görüntü işleme, yeniden boyutlandırma ve format dönüştürme özellikleri olan bir araç. 
+                        Web geliştiricileri ve tasarımcılar için zaman kazandırır.
+                    </p>
+                    <p class="project-tech">Python, PIL/Pillow, CLI</p>
+                    <a href="#" class="btn btn-outline">Detay</a>
+                </article>
+
+                <!-- Proje kartı 6 -->
+                <article class="project-card tilt-card">
+                    <span class="card-icon">📈</span>
+                    <h3 class="project-title">Veri Görselleştirme Dashboard</h3>
+                    <p class="project-description">
+                        CSV ve JSON verilerini yükleyip interaktif grafikler ve tablolar oluşturan web tabanlı dashboard. 
+                        Veri analizi süreçlerini kolaylaştırır.
+                    </p>
+                    <p class="project-tech">JavaScript, Chart.js, HTML5, CSS3</p>
+                    <a href="#" class="btn btn-outline">Detay</a>
+                </article>
+
+                <!-- YENİ PROJE KARTI EKLEMEK İÇİN: Yukarıdaki article.project-card yapısını kopyalayıp buraya ekleyebilirsin -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <p class="section-description">
+                Yazılım, yapay zekâ, görüntü işleme ve geliştirici günlüklerimi burada paylaşıyorum.
+            </p>
+            <div class="blog-grid">
+                <!-- Blog kartı 1 -->
+                <article class="blog-card tilt-card">
+                    <span class="card-icon">📚</span>
+                    <h3 class="blog-title">Görüntü İşleme ile Neler Yapılabilir?</h3>
+                    <p class="blog-excerpt">
+                        Görüntü işleme teknolojilerinin günlük hayatta ve iş dünyasında nasıl kullanılabileceğini keşfedin. 
+                        Pratik örnekler ve kod parçacıklarıyla başlangıç seviyesinden ileri seviyeye kadar rehberlik.
+                    </p>
+                    <div class="blog-meta">
+                        <span class="blog-date">Kasım 2025</span>
+                        <a href="blog-post.html?id=1" class="blog-link">Yazıyı Oku →</a>
+                    </div>
+                </article>
+
+                <!-- Blog kartı 2 -->
+                <article class="blog-card tilt-card">
+                    <span class="card-icon">💰</span>
+                    <h3 class="blog-title">Sıfır Bütçeyle Proje Geliştirmek</h3>
+                    <p class="blog-excerpt">
+                        Ücretsiz araçlar ve açık kaynak kütüphaneler kullanarak profesyonel projeler geliştirmenin yolları. 
+                        Bütçe kısıtlamaları olmadan da kaliteli yazılım üretmek mümkün.
+                    </p>
+                    <div class="blog-meta">
+                        <span class="blog-date">Ekim 2025</span>
+                        <a href="blog-post.html?id=2" class="blog-link">Yazıyı Oku →</a>
+                    </div>
+                </article>
+
+                <!-- Blog kartı 3 -->
+                <article class="blog-card tilt-card">
+                    <span class="card-icon">🤖</span>
+                    <h3 class="blog-title">Yapay Zekâ ile Küçük Araçlar Geliştirerek Gelir Elde Etmek</h3>
+                    <p class="blog-excerpt">
+                        AI tabanlı küçük araçlar ve scriptler geliştirip Gumroad, Fiverr gibi platformlarda nasıl satabileceğinizi öğrenin. 
+                        Gerçek örnekler ve gelir stratejileri.
+                    </p>
+                    <div class="blog-meta">
+                        <span class="blog-date">Eylül 2025</span>
+                        <a href="blog-post.html?id=3" class="blog-link">Yazıyı Oku →</a>
+                    </div>
+                </article>
+
+                <!-- YENİ BLOG YAZISI EKLEMEK İÇİN: Yukarıdaki article.blog-card yapısını kopyalayıp buraya ekleyebilirsin -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">Ürünler</h2>
+            <p class="section-description">
+                Geliştirdiğim küçük araçları ve scriptleri burada paylaşacağım. İstersen doğrudan indirip kullanabilir veya projene entegre edebilirsin.
+            </p>
+            <div class="products-grid">
+                <!-- Ürün kartı 1 -->
+                <article class="product-card tilt-card">
+                    <span class="card-icon">🎬</span>
+                    <h3 class="product-title">YouTube Video Analiz Scripti</h3>
+                    <p class="product-description">
+                        YouTube videolarını analiz ederek konuşma süreleri, sessizlik aralıkları ve içerik özeti çıkaran Python scripti. 
+                        İçerik üreticileri için ideal.
+                    </p>
+                    <p class="product-tech">Teknolojiler: Python, YouTube API, Speech Recognition</p>
+                    <a href="#" class="btn btn-primary">
+                        Satın Al / İndir
+                        <!-- Buraya ileride Gumroad veya başka bir satış linki eklenecek -->
+                    </a>
+                </article>
+
+                <!-- Ürün kartı 2 -->
+                <article class="product-card tilt-card">
+                    <span class="card-icon">👤</span>
+                    <h3 class="product-title">Basit Yüz Tanıma Modülü</h3>
+                    <p class="product-description">
+                        Kolay entegre edilebilen, hafif ve hızlı yüz tanıma modülü. Web kamerası ve video dosyalarıyla çalışır. 
+                        Projelerine hızlıca ekleyebilirsin.
+                    </p>
+                    <p class="product-tech">Teknolojiler: Python, OpenCV, MediaPipe</p>
+                    <a href="#" class="btn btn-primary">
+                        Satın Al / İndir
+                        <!-- Buraya ileride Gumroad veya başka bir satış linki eklenecek -->
+                    </a>
+                </article>
+
+                <!-- Ürün kartı 3 -->
+                <article class="product-card tilt-card">
+                    <span class="card-icon">✨</span>
+                    <h3 class="product-title">Metin Temizleme ve Önişleme Aracı</h3>
+                    <p class="product-description">
+                        Türkçe metinleri temizleyen, normalize eden ve analiz için hazırlayan kapsamlı bir araç. 
+                        NLP projelerinde zaman kazandırır.
+                    </p>
+                    <p class="product-tech">Teknolojiler: Python, NLTK, Regex</p>
+                    <a href="#" class="btn btn-primary">
+                        Satın Al / İndir
+                        <!-- Buraya ileride Gumroad veya başka bir satış linki eklenecek -->
+                    </a>
+                </article>
+
+                <!-- YENİ ÜRÜN EKLEMEK İÇİN: Yukarıdaki article.product-card yapısını kopyalayıp buraya ekleyebilirsin -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Hizmetler</h2>
+            <p class="section-description">
+                Akıllı sistemler, görüntü işleme, veri analizi ve web tabanlı çözümler geliştiriyorum. Aşağıdaki konularda birlikte çalışabiliriz.
+            </p>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3 class="service-title">Görüntü İşleme ve Yüz Tanıma Projeleri</h3>
+                    <p class="service-description">
+                        OpenCV, MediaPipe ve modern AI kütüphaneleri kullanarak görüntü işleme çözümleri geliştiriyorum.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-title">Python ile Backend ve API Geliştirme</h3>
+                    <p class="service-description">
+                        FastAPI, Flask ve Django kullanarak ölçeklenebilir backend sistemleri ve RESTful API'ler tasarlıyorum.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-title">Veri Analizi, Model Eğitimi ve Değerlendirme</h3>
+                    <p class="service-description">
+                        Makine öğrenmesi modelleri eğitimi, veri analizi ve model performans değerlendirmesi konularında destek sağlıyorum.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-title">Prototip Ürün Geliştirme ve MVP Danışmanlığı</h3>
+                    <p class="service-description">
+                        Fikrinizi hızlıca çalışan bir prototipe dönüştürüp MVP aşamasına getirmenize yardımcı oluyorum.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="cta-box">
+                <h3 class="cta-title">Bir fikrin mi var?</h3>
+                <p class="cta-text">Bana ulaş, birlikte gerçek bir ürüne dönüştürelim.</p>
+                <a href="#contact" class="btn btn-primary">İletişime Geç</a>
+            </div>
+
+            <!-- Freelance Platform Links (Yorum olarak, ileride eklenebilir) -->
+            <!-- Fiverr profil linkini buraya ekleyebilirsin: <a href="#" class="platform-link">Fiverr Profilim</a> -->
+            <!-- Bionluk profil linkini buraya ekleyebilirsin: <a href="#" class="platform-link">Bionluk Profilim</a> -->
+            <!-- Upwork profil linkini buraya ekleyebilirsin: <a href="#" class="platform-link">Upwork Profilim</a> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <p class="section-description">
+                Projeler, iş birlikleri veya sadece merhaba demek için bana ulaşabilirsin.
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:berkay97071997@gmail.com" class="contact-link email">
+                        <span class="contact-icon">✉</span>
+                        <span>berkay97071997@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact-social">
+                    <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg class="social-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <span>GitHub</span>
+                        <!-- GitHub profil linkini buraya ekleyebilirsin -->
+                    </a>
+                    <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg class="social-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                        <!-- LinkedIn profil linkini buraya ekleyebilirsin -->
+                    </a>
+                    <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <svg class="social-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span>Fiverr</span>
+                        <!-- Fiverr profil linkini buraya ekleyebilirsin -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Berkay Yavuz. Tüm hakları saklıdır.</p>
+            <p class="footer-note">Bu site GitHub Pages üzerinde ücretsiz olarak barındırılmaktadır.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/main.js"></script>
+</body>
+</html>
+

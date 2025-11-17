@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Görüntü İşleme ile Neler Yapılabilir? | Berkay Yavuz</title>
+    <meta name="description" content="Görüntü işleme teknolojilerinin günlük hayatta ve iş dünyasında nasıl kullanılabileceğini keşfedin.">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <a href="index.html">Berkay Yavuz</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projeler</a></li>
+                <li><a href="index.html#blog" class="nav-link">Blog</a></li>
+                <li><a href="index.html#products" class="nav-link">Ürünler</a></li>
+                <li><a href="index.html#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Karanlık mod">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post">
+        <div class="container">
+            <div class="blog-post-header">
+                <a href="index.html#blog" class="blog-back-link">← Geri Dön</a>
+                <h1 class="blog-post-title">Görüntü İşleme ile Neler Yapılabilir?</h1>
+                <div class="blog-post-meta">
+                    <span class="blog-post-date">Kasım 2025</span>
+                    <div class="blog-post-tags">
+                        <span class="tag">Görüntü İşleme</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-post-content">
+                <p>
+                    Görüntü işleme teknolojileri, günümüzde birçok sektörde kritik bir rol oynuyor. 
+                    Bu yazıda, görüntü işleme ile neler yapabileceğinizi ve pratik kullanım alanlarını keşfedeceğiz.
+                </p>
+                
+                <h2>Görüntü İşlemenin Temel Kullanım Alanları</h2>
+                
+                <p>
+                    Görüntü işleme, dijital görüntüleri analiz etmek, düzenlemek ve anlamlandırmak için kullanılan 
+                    bir teknolojidir. OpenCV, PIL/Pillow ve modern AI kütüphaneleri sayesinde bu teknolojiyi 
+                    kullanmak artık çok daha erişilebilir hale geldi.
+                </p>
+                
+                <h3>1. Yüz Tanıma ve Duygu Analizi</h3>
+                <p>
+                    Gerçek zamanlı video akışından yüz tespiti yaparak duygu analizi gerçekleştirebilirsiniz. 
+                    Bu teknoloji güvenlik sistemlerinde, pazarlama araştırmalarında ve kullanıcı deneyimi 
+                    iyileştirmelerinde kullanılabilir.
+                </p>
+                
+                <h3>2. Nesne Tespiti ve Takibi</h3>
+                <p>
+                    Görüntü işleme ile nesneleri tespit edip takip edebilirsiniz. Bu özellik özellikle 
+                    otonom araçlar, güvenlik kameraları ve endüstriyel otomasyon sistemlerinde kritik öneme sahiptir.
+                </p>
+                
+                <h3>3. Görüntü İyileştirme ve Restorasyon</h3>
+                <p>
+                    Eski veya bozuk görüntüleri iyileştirmek, gürültüyü azaltmak ve görüntü kalitesini 
+                    artırmak için görüntü işleme teknikleri kullanılabilir.
+                </p>
+                
+                <h2>Pratik Örnekler ve Kod Parçacıkları</h2>
+                
+                <p>
+                    Python ve OpenCV kullanarak basit görüntü işleme işlemleri gerçekleştirebilirsiniz. 
+                    Örneğin, bir görüntüyü yükleyip gri tonlamaya çevirmek için şu kodu kullanabilirsiniz:
+                </p>
+                
+                <pre><code>import cv2
+
+# Görüntüyü yükle
+img = cv2.imread('image.jpg')
+
+# Gri tonlamaya çevir
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# Sonucu kaydet
+cv2.imwrite('gray_image.jpg', gray)</code></pre>
+                
+                <h2>Sonuç</h2>
+                
+                <p>
+                    Görüntü işleme teknolojileri, başlangıç seviyesinden ileri seviyeye kadar geniş bir 
+                    yelpazede kullanılabilir. Bu teknolojiyi öğrenmek ve projelerinizde kullanmak için 
+                    ücretsiz kaynaklar ve açık kaynak kütüphaneler mevcuttur.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Berkay Yavuz. Tüm hakları saklıdır.</p>
+            <p class="footer-note">Bu site GitHub Pages üzerinde ücretsiz olarak barındırılmaktadır.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/main.js"></script>
+</body>
+</html>
+
